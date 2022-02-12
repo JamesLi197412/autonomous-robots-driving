@@ -1,0 +1,10 @@
+--------------- Rebuild Started: 09/09/2019 18:33:19 Project: main.c, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/main.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c main.c -o .\CortexM3\ARM_GCC_541\Debug\main.o
+main.c: In function 'move_to':
+main.c:388:19: warning: unused variable 'side_us' [-Wunused-variable]
+             float side_us = side_us_1;
+                   ^
+main.c:418:28: warning: 'side_us' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         } else if (side_us < (us_side_distance - 0.01) && current_distance > align_distance) { // too close from side, needs correction
+                            ^
+--------------- Rebuild Succeeded: 09/09/2019 18:33:20 ---------------
